@@ -1,0 +1,6 @@
+<!--<input type="text" size="40" [(ngModel)]="enteredMessage">-->
+<!--<button (click)="emitMessage()">Send</button>-->
+<form (submit)="emitMessage()">
+  <input type="text" size="40" [(ngModel)]="enteredMessage" name="input">
+  <p><input type="submit"></p>
+</form>

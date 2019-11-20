@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div class="root">
+  <app-bot-list [Bots]="bots"></app-bot-list>
+  <!--<router-outlet></router-outlet>-->
+  <app-chat [messages]="activeBot.messages"></app-chat>
+  <app-input-form (outMessage)="getEnteredMessage($event)"></app-input-form>
+</div>
