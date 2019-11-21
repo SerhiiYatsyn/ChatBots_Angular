@@ -1,6 +1,7 @@
-<p class="from-them message-from-bot">chat works!</p>
-<p class="from-me">Hey there! What's up</p>
-<p class="from-me" *ngFor="let message of messages">{{message}}</p>
+<!--<p class="from-them message-from-bot">chat works!</p>-->
+<!--<p class="from-me">Hey there! What's up</p>-->
+<p class="from-me" [ngClass]="{'message-from-bot':message.from==='bot','from-me':message.from!=='bot'}"
+   *ngFor="let message of messages">{{message.message}}</p>
 <!--<p class="from-them">Checking out iOS7 you know..</p>-->
 <!--<p class="from-me">Check out this bubble!</p>-->
 <!--<p class="from-them">It's pretty cool!</p>-->
