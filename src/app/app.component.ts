@@ -8,6 +8,7 @@ import {botAndy} from './bots/Andy-bot';
 import {botDany} from './bots/Dany-bot';
 import {botAdder} from './bots/botAdder';
 import {botEcho} from './bots/botEcho';
+import {botHodor} from './bots/botHodor';
 
 export interface Message {
   from: string;
@@ -36,7 +37,7 @@ export class AppComponent {
   //   map((allInfoMessage: Message) => allInfoMessage.message),
   //   filter(hasWord('andy'))
   // ).subscribe(r => console.log(r));
-  bots: Bot[] = [botAndy, botDany, botAdder, botEcho];
+  bots: Bot[] = [botAndy, botDany, botAdder, botEcho, botHodor];
   activeBot: Bot = this.bots[0];
 
   constructor(private router: Router) {
